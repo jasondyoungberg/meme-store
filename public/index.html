@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Yelp for Anything!</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body id="body">
+		
+		<script type="text/javascript"> 
+			
+			function whichIsBetter() {
+				var xhr = new XMLHttpRequest();			
+				
+				xhr.open("GET","http://localhost:3000/whichIsBetter", true);
+				xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+				xhr.onreadystatechange = function() {
+        			if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+            			document.getElementById("marvel-or-dc").innerHTML = this.responseText;
+						document.getElementById("body").style.backgroundColor = "silver";
+       				}
+				};
+				
+				xhr.send();
+   			}
+		</script>
+
+		<h1>Is Marvel better than DC? Or vice-versa?</h1>
+		
+		<div id="marvel-or-dc">Test test test</div>
+		
+		<button type="button" onclick="whichIsBetter()">Well, which is it?</button>
+
+		<input type="text"></input>
+
+		<br><br><br><hr>
+		<footer>Go Patriots!</footer>
+	</body>
+</html>
