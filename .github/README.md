@@ -1,7 +1,7 @@
 # yelpForAnything
-![](https://img.shields.io/github/repo-size/timburr1/yelpForAnything)
-![](https://img.shields.io/github/contributors/timburr1/yelpForAnything)
-![](https://img.shields.io/github/last-commit/timburr1/yelpForAnything)
+![](https://img.shields.io/github/repo-size/timburr1/meme-store)
+![](https://img.shields.io/github/contributors/timburr1/meme-store)
+![](https://img.shields.io/github/last-commit/timburr1/meme-store)
 <br>Simple ratings web page, built with MySQL and Node.js.
 
 ## Prerequisites
@@ -11,7 +11,7 @@
 
 ## Checkout this project
 ```bash
-$ git clone https://github.com/timburr1/yelpForAnything.git
+$ git clone https://github.com/timburr1/meme-store.git
 ```
 
 ## Install Node.js and NPM
